@@ -1,7 +1,6 @@
 "use client";
 import { ChangeEvent, useRef } from "react";
 import axios from "axios";
-import loading from "@/app/loading";
 
 const Signup = () => {
   const nameRef = useRef<HTMLInputElement>(null);
