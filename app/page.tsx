@@ -1,5 +1,6 @@
 import Image from "next/image";
 import axios from "axios";
+import { Button } from "@/Components/ui/button"
 
 async function getUserDetails() {
   await new Promise((r)=>setTimeout(r,5000));
@@ -18,6 +19,7 @@ export default async function Home() {
       </div>
       Email: {userDetails?.email}
       </div>
+      <Button variant="destructive">Button</Button>
     </div>
   );
 }
