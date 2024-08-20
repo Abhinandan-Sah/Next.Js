@@ -1,14 +1,12 @@
-const PromoBanner = ({children}:{
+const AuthLayout = ({children}:{
     children: React.ReactNode
 }) => {
-    return (<div>
-      <div className="border text-center">
-        20% off for next 3 days
-      </div>
+    return (
+      <div className="h-screen flex justify-center items-center">
       {children}
-      </div>
+      </div> 
     );
   };
   
-  export default PromoBanner;
+  export default AuthLayout;
   
